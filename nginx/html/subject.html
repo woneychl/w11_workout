@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script>
+      async function loadSubject() {
+        const res = await fetch("/api/subject");
+        const data = await res.json();
+        document.getElementById("title").textContent = data.title;
+        document.getElementById("desc").textContent = data.description;
+         document.getElementById("desc2").textContent = data.description2;
+      }
+
+      window.onload = loadSubject;
+    </script>
+  </head>
+  <body> 
+    <h1 id="title"></h1>
+    <p id="desc"></p>
+    <p id="desc2"></p>
+    <a href="/index.html">← 홈</a>
+  </body>
+</html>
