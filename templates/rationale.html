@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  </head>
+  <body> 
+    <h1 id="title"></h1>
+    <p id="desc"></p>
+    <p id="desc2"></p>
+    <a href="/">← 홈</a>
+
+    <script>
+      fetch("/api/rationale")
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById("title").innerText = data.title;
+        document.getElementById("desc").innerText = data.description;
+        document.getElementById("desc2").innerText = data.description2;
+      });
+    </script>
+  </body>
+</html>

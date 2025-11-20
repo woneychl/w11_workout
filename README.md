@@ -20,4 +20,4 @@
 - 송기준: 백엔드, 서버 관리
 ## 6. 실행 방법 (Run)
 docker compose up --build -d
-# http://localhost:5000 < 프로젝트에 맞는 포트 또는 배포된 public IP >
+# http://13.125.216.30 < 프로젝트에 맞는 포트 또는 배포된 public IP >

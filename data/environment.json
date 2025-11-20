@@ -1,0 +1,6 @@
+{
+        "title": "구현환경",
+        "description": "개발 언어: python3, JS, html",
+        "description2":"프레임워크: next.js, numpy, pandas, sklearn, fastApi",
+        "description3": "배포 환경: vercel, AWS RDS"
+    }
